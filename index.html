@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monetary account</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="frame">
+      <div id="nav">
+        <h1>Ismar account</h1>
+        <select id="nav-currency" onChange="setCurrency()">
+          <option value="BAM">BAM</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div id="main">
+        <div id="total">
+          <p>Total ammount:</p>
+          <span id="total-ammount">0</span>
+        </div>
+        <span id="toggle" onclick="show()">Show other currencies:</span>
+        <div class="other-currencies">
+          <div id="bam" class="currency-view">
+            <p>BAM</p>
+            <span id="bam-currency">35</span>
+          </div>
+          <div id="eur" class="currency-view">
+            <p>EUR</p>
+            <span id="eur-currency">25</span>
+          </div>
+        </div>
+        <div id="inputs">
+          <input type="text" />
+          <select id="inputs-currency" onChange="inputCurrency()">
+            <option value="BAM">BAM</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <button id="submit" onclick="submitValue()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

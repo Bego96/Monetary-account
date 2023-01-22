@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(206, 206, 206);
+}
+
+#frame {
+  width: 650px;
+  background-color: white;
+  margin: 200px auto;
+  
+}
+
+#frame #nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 5px 20px;
+}
+
+#frame #nav #nav-currency {
+  height: 30px;
+  width: 90px;
+}
+
+#frame #main {
+  padding: 20px;
+}
+
+#frame #main #total {
+  margin: 40px 0;
+  display: flex;
+  width: 200px;
+}
+
+#frame #main #total span {
+  margin-left: 20px;
+}
+
+#frame #main #toggle {
+  margin-bottom: 15px;
+  color: red;
+  display: block;
+  width: 150px;
+  cursor: pointer;
+}
+
+.other-currencies {
+  margin: 40px 0;
+  display: none;
+}
+
+#frame #main .other-currencies .currency-view {
+  display: flex;
+  width: 200px;
+  margin: 10px 0;
+}
+
+
+#frame #main .other-currencies .currency-view p {
+  margin-right: 20px;
+}
+
+#frame #main #inputs #submit {
+  display: block;
+  margin-top: 15px;
+  width: 100px;
+  height: 30px;
+}
+
+.show {
+  display: block;
+}
+
+#frame #main #inputs #inputs-currency {
+  height: 30px;
+  width: 90px;
+}
+
+input {
+  height: 25px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  background-color: rgb(245, 245, 245);
+  
+}
